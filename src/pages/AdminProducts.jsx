@@ -35,7 +35,7 @@ export default function AdminProducts() {
     if (!window.confirm("Delete this product?")) return;
 
     try {
-      await fetch(`https://ecommerce-api-ut4e.onrender.com/api/product/${id}`, {
+      await fetch(`https://ecommerce-client-git-main-abhisheks-projects-b5d89adb.vercel.app/api/product/${id}`, {
         method: "DELETE",
         headers: {
           "Content-Type": "application/json",

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import AppContext from "./AppContext";
 import axios from "axios";
 
-const API_BASE = "https://ecommerce-api-ut4e.onrender.com";
+const API_BASE = "https://ecommerce-client-git-main-abhisheks-projects-b5d89adb.vercel.app";
 
 const AppState = (props) => {
   const [appState, setAppState] = useState({
