@@ -3,7 +3,8 @@ import AdminNavbar from "../components/AdminNavbar";
 import axios from "axios";
 import AppContext from "../context/AppContext";
 
-const API_BASE = "https://ecommerce-client-git-main-abhisheks-projects-b5d89adb.vercel.app";
+const API_BASE ="https://ecommerce-api-ut4e.onrender.com";
+
 
 export default function AdminUsers() {
   const { appState, deleteUser } = useContext(AppContext || {});

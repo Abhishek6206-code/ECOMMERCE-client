@@ -8,7 +8,8 @@ import sportsImg from "../assets/sports.jpg";
 import heroImage from "../assets/hero2.jpg";
 import axios from "axios";
 
-const API_BASE = "https://ecommerce-client-git-main-abhisheks-projects-b5d89adb.vercel.app";
+const API_BASE ="https://ecommerce-api-ut4e.onrender.com";
+
 
 const Home = () => {
   const navigate = useNavigate();
