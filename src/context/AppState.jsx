@@ -297,6 +297,25 @@ const AppState = (props) => {
       return { success: false, error: err.message };
     }
   };
+   const addProduct = async (productData) => {
+    try {
+      const res = await axios.post(
+        `${API_BASE}/product/add`,
+        productData,
+        {
+          headers: {
+            "Content-Type": "application/json",
+            Auth: appState.token
+          }
+        }
+      );
+      return res.data;
+    } catch (err) {
+      console.error("Add product error:", err);
+      throw err;
+    }
+  };
+
 
   return (
     <AppContext.Provider
@@ -321,6 +340,7 @@ const AppState = (props) => {
         fetchAllUsers,
         fetchAllOrders,
         fetchAdminSummary,
+        addProduct
       }}
     >
       {props.children}
