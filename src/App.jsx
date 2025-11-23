@@ -12,6 +12,7 @@ import AdminProducts from "./pages/AdminProducts";
 import AdminAddProduct from "./pages/AdminAddProduct";
 import AdminOrders from "./pages/AdminOrders";
 import AdminUsers from "./pages/AdminUsers";
+import ShowProfile from "./pages/ShowProfile";
 
 const App = () => {
   return (
@@ -22,6 +23,7 @@ const App = () => {
       <Route path="/products" element={<Products />} />
       <Route path="/cart" element={<Cart />} />
       <Route path="/checkout" element={<Checkout />} />
+       <Route path="/profile" element={<ShowProfile />} />
 
       {/* Admin routes */}
       <Route path="/admin" element={<AdminDashboard />} />
