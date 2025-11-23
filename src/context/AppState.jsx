@@ -300,7 +300,7 @@ const AppState = (props) => {
    const addProduct = async (productData) => {
     try {
       const res = await axios.post(
-        `${API_BASE}/product/add`,
+        `${API_BASE}/api/product/add`,
         productData,
         {
           headers: {
